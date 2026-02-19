@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #120e10;
+  --surface: #1d1416;
+  --bordeaux: #7c1d2c;
+  --moss: #2d4736;
+  --gold: #a3853f;
+  --text: #f5efe6;
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body), sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  background-image:
+    radial-gradient(circle at 8% 10%, rgba(124, 29, 44, 0.25), transparent 25%),
+    radial-gradient(circle at 92% 30%, rgba(45, 71, 54, 0.22), transparent 25%),
+    linear-gradient(180deg, #100c0d 0%, #171113 100%);
+}
+
+.font-title {
+  font-family: var(--font-title), serif;
+  letter-spacing: 0.01em;
+  line-height: 1.08;
+}
+
+.font-body {
+  font-family: var(--font-body), sans-serif;
+}
+
+.pitch-lines {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.stadium-vignette {
+  background: radial-gradient(circle at center, transparent 20%, rgba(0, 0, 0, 0.45) 78%);
+}
