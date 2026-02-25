@@ -9,6 +9,8 @@ type PhotoShowcaseSectionProps = {
 };
 
 export function PhotoShowcaseSection({ images, title, subtitle }: PhotoShowcaseSectionProps) {
+  const singleImage = images.length === 1;
+
   return (
     <section className="mx-auto max-w-6xl px-6 py-16 sm:py-24">
       <motion.h2
@@ -30,7 +32,7 @@ export function PhotoShowcaseSection({ images, title, subtitle }: PhotoShowcaseS
         {subtitle ?? 'Visual oficial da campanha Verace para coleção dos países campeões.'}
       </motion.p>
 
-      <div className="mt-8 grid gap-4 md:grid-cols-2">
+      <div className={`mt-8 grid gap-4 ${singleImage ? 'grid-cols-1' : 'md:grid-cols-2'}`}>
         {images.map((image, index) => (
           <motion.figure
             key={image.src}
@@ -38,7 +40,7 @@ export function PhotoShowcaseSection({ images, title, subtitle }: PhotoShowcaseS
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.45, delay: index * 0.06 }}
-            className="overflow-hidden rounded-2xl border border-white/10 bg-[#1C1315]"
+            className={`overflow-hidden rounded-2xl border border-white/10 bg-[#1C1315] ${singleImage ? 'mx-auto w-full max-w-5xl' : ''}`}
           >
             <img src={image.src} alt={image.alt} className="h-full w-full object-cover" />
           </motion.figure>

@@ -62,11 +62,11 @@ export const campaignData = {
   whatsappUrl: 'https://wa.me/5511999999999?text=Quero%20reservar%20na%20Verace',
   imageShowcase: [
     {
-      src: '/images/campaign/kit-cerveja.png',
+      src: '/images/campaign/kit-cerveja.png?v=3',
       alt: 'Kit Torcedor Verace com duas cervejas, taça e abridor',
     },
     {
-      src: '/images/campaign/kit-vinho.png',
+      src: '/images/campaign/kit-vinho.png?v=3',
       alt: 'Kit Premium Verace com vinho, taças e saca-rolhas',
     },
     {
@@ -169,7 +169,7 @@ export const kitLevels: KitLevel[] = [
     availability: 'Apenas 50 unidades',
     tag: 'Para colecionar',
     accent: '#7C1D2C',
-    image: '/images/campaign/kit-cerveja.png?v=2',
+    image: '/images/campaign/kit-cerveja.png?v=3',
     imageAlt: 'Foto do Kit Torcedor da Verace',
   },
   {
@@ -181,7 +181,7 @@ export const kitLevels: KitLevel[] = [
     availability: 'Apenas 50 unidades (Edi\u00e7\u00e3o Limitada)',
     tag: 'Edi\u00e7\u00e3o exclusiva',
     accent: '#A3853F',
-    image: '/images/campaign/kit-vinho.png?v=2',
+    image: '/images/campaign/kit-vinho.png?v=3',
     imageAlt: 'Foto do Kit Premium da Verace',
   },
 ];

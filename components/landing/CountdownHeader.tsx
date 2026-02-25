@@ -58,9 +58,9 @@ export function CountdownHeader({ promoEndDate }: CountdownHeaderProps) {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[#A3853F]/20 bg-[#140C0F]/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-center gap-2 px-3 py-2.5 sm:px-6 sm:py-3">
         <Clock3 className="h-4 w-4 shrink-0 text-[#D8B768]" />
-        <p className="truncate text-sm text-[#E6D9C5]">
+        <p className="text-center text-xs text-[#E6D9C5] sm:text-sm">
           Final da Copa: {formattedDate} • {timeLeft.expired ? 'Promoção encerrada' : `${pad(timeLeft.days)}d ${pad(timeLeft.hours)}h ${pad(timeLeft.minutes)}m`}
         </p>
       </div>

@@ -15,11 +15,7 @@ export default function Page() {
     <main className="bg-[#120E10] pt-9 text-[#F5EFE6] sm:pt-10">
       <CountdownHeader promoEndDate={campaignData.promoEndDate} />
 
-      <HeroSection
-        headline={campaignData.headline}
-        subheadline={campaignData.subheadline}
-        kitsSectionId={campaignData.kitsSectionId}
-      />
+      <HeroSection kitsSectionId={campaignData.kitsSectionId} />
 
       <WorldCupRouteSection />
 
@@ -30,11 +26,7 @@ export default function Page() {
         subtitle="Modelos exclusivos da campanha Verace inspirados nos países campeões da Copa."
         images={[
           {
-            src: '/images/campaign/tacas-vinho-copa.png',
-            alt: 'Linha completa de taças de vinho colecionáveis da campanha Verace',
-          },
-          {
-            src: '/images/campaign/tacas-cerveja-copa.png',
+            src: '/images/campaign/tacas-colecionaveis-4379.png',
             alt: 'Linha completa de taças colecionáveis Verace edição Copa',
           },
         ]}
