@@ -42,6 +42,15 @@ export function HeroSection({ kitsSectionId }: HeroSectionProps) {
           />
         </div>
 
+        <motion.img
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
+          src="/images/campaign/hero-selo-tacas-colecionaveis.png"
+          alt="Taças colecionáveis da Copa - celebre com Verace"
+          className="absolute inset-x-0 bottom-[116px] mx-auto w-full max-w-[18rem] object-contain sm:bottom-[126px] sm:max-w-[22rem] md:bottom-[130px] md:max-w-[25rem] lg:bottom-[136px] lg:max-w-[29rem]"
+        />
+
         <div className="absolute inset-x-0 bottom-[56px] flex justify-center sm:bottom-[62px]">
           <motion.button
             initial={{ opacity: 0, y: 24 }}
