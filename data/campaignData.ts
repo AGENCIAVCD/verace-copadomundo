@@ -105,7 +105,7 @@ export const campaignRules: RuleItem[] = [
     id: 'consumo-minimo',
     title: '1. Faixa de consumo',
     description:
-      'Para ativar o Kit Torcedor, o consumo m\u00ednimo \u00e9 de R$ 300,00. Para ativar o Kit Premium, o consumo m\u00ednimo \u00e9 de R$ 500,00.',
+      'Para ativar o Kit Torcedor, o consumo m\u00ednimo \u00e9 de R$ 300,00. Para ativar o Kit Premium, o consumo m\u00ednimo \u00e9 de R$ 1.000,00 com 20% de desconto sobre o valor do kit.',
   },
   {
     id: 'escolha-pais',
@@ -175,8 +175,8 @@ export const kitLevels: KitLevel[] = [
   {
     id: 'premium',
     title: 'N\u00edvel 2: Kit Premium (Vinho)',
-    rule: 'Consuma acima de R$ 500,00.',
-    benefit: 'Leve o Kit Premium de R$ 200,00 por apenas R$ 100,00.',
+    rule: 'Consuma acima de R$ 1.000,00.',
+    benefit: 'O Kit Premium custa R$ 200,00 e garante 20% de desconto no valor do kit.',
     items: ['1 vinho selecionado', '2 ta\u00e7as do pa\u00eds escolhido'],
     availability: 'Apenas 50 unidades (Edi\u00e7\u00e3o Limitada)',
     tag: 'Edi\u00e7\u00e3o exclusiva',
