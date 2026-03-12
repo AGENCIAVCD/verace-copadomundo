@@ -105,7 +105,7 @@ export const campaignRules: RuleItem[] = [
     id: 'consumo-minimo',
     title: '1. Faixa de consumo',
     description:
-      'Para ativar o Kit Torcedor, o consumo m\u00ednimo \u00e9 de R$ 300,00. Para ativar o Kit Premium, o consumo m\u00ednimo \u00e9 de R$ 1.000,00 com 20% de desconto sobre o valor do kit.',
+      'Para garantir o desconto promocional, o consumo m\u00ednimo \u00e9 de R$ 1.000,00. Cada kit tem valor de R$ 200,00 e sai por R$ 160,00 com 20% de desconto.',
   },
   {
     id: 'escolha-pais',
@@ -132,13 +132,13 @@ export const campaignFaq: FaqItem[] = [
     id: 'acumula',
     question: 'Posso acumular mais de um kit na mesma mesa?',
     answer:
-      'Sim, desde que o valor total de consumo atinja os patamares necess\u00e1rios para cada kit e exista disponibilidade no momento do fechamento.',
+      'Sim, desde que o valor total de consumo ultrapasse R$ 1.000,00 para cada kit desejado e exista disponibilidade no momento do fechamento.',
   },
   {
     id: 'misturar-kits',
     question: 'Posso pegar Kit Torcedor e Kit Premium no mesmo atendimento?',
     answer:
-      'Pode. Se o consumo atender aos dois n\u00edveis, voc\u00ea pode combinar os kits respeitando o limite de estoque de cada categoria.',
+      'Pode. Se o consumo atingir a regra promocional de R$ 1.000,00 para cada kit, voc\u00ea pode combinar as categorias respeitando o limite de estoque.',
   },
   {
     id: 'reserva-kit',
@@ -158,8 +158,8 @@ export const kitLevels: KitLevel[] = [
   {
     id: 'torcedor',
     title: 'N\u00edvel 1: Kit Torcedor (Cerveja)',
-    rule: 'Consuma acima de R$ 300,00.',
-    benefit: 'Ganhe 50% de desconto no Kit Torcedor.',
+    rule: 'Compras acima de R$ 1.000,00 liberam o desconto promocional.',
+    benefit: 'O Kit Torcedor custa R$ 200,00 e sai por R$ 160,00 com 20% de desconto.',
     items: [
       'Caixa personalizada',
       '2 cervejas (do pa\u00eds ou representativa)',
@@ -175,8 +175,8 @@ export const kitLevels: KitLevel[] = [
   {
     id: 'premium',
     title: 'N\u00edvel 2: Kit Premium (Vinho)',
-    rule: 'Consuma acima de R$ 1.000,00.',
-    benefit: 'O Kit Premium custa R$ 200,00 e garante 20% de desconto no valor do kit.',
+    rule: 'Compras acima de R$ 1.000,00 liberam o desconto promocional.',
+    benefit: 'O Kit Premium custa R$ 200,00 e sai por R$ 160,00 com 20% de desconto.',
     items: ['1 vinho selecionado', '2 ta\u00e7as do pa\u00eds escolhido'],
     availability: 'Apenas 50 unidades (Edi\u00e7\u00e3o Limitada)',
     tag: 'Edi\u00e7\u00e3o exclusiva',
